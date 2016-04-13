@@ -1,0 +1,45 @@
+.container  {
+	margin: auto;
+	width: 1000px;
+}
+
+h1 {
+	font-family: sans-serif;
+}
+
+.grid {
+	max-width: 1000px;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer, .grid-item { 
+	width: 19.5%;
+}
+
+.grid-item {
+	height: 200px;
+	background-color: #555;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.grid-item--width2 { width: 39%; }
+.grid-item--width3 { width: 59.5%; }
+
+.grid-item--height2 { height: 410px; }
+
+.grid-item--gigante {
+  width: 100%;
+  height: 410px;
+	opacity: 0.2;
+}
+
+.grid-item:hover {
+  background: #888;
+  cursor: pointer;
+}
